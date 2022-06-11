@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ShopFragment">
+    <fragment
+        android:id="@+id/AddShopFragment"
+        android:name="com.jerry1012.shoppinglist.UI.AddShop.AddShopFragment"
+        android:label="Add Shop"
+        tools:layout="@layout/fragment_shopname">
+        <action
+            android:id="@+id/action_AddShopFragment_to_ShopFragment"
+            app:destination="@id/ShopFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="shop"
+            app:argType="com.jerry1012.shoppinglist.room.Shop"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="isEdit"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/ShoppingItemFragment"
+        android:name="com.jerry1012.shoppinglist.UI.ShoppingItem.ShoppingItemFragment"
+        android:label="Shopping Item"
+        tools:layout="@layout/fragment_shopingitem">
+        <action
+            android:id="@+id/action_shoppingItemFragment_to_addItemFragment"
+            app:destination="@id/AddItemFragment" />
+        <action
+            android:id="@+id/action_ShoppingItemFragment_to_ShopFragment"
+            app:destination="@id/ShopFragment" />
+        <argument
+            android:name="ShopDetails"
+            app:argType="com.jerry1012.shoppinglist.room.Shop"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ShopFragment"
+        android:name="com.jerry1012.shoppinglist.UI.Shop.ShopFragment"
+        android:label="Shop Name"
+        tools:layout="@layout/fragment_shop_details">
+        <action
+            android:id="@+id/action_shopFragment_to_addShopFragment"
+            app:destination="@id/AddShopFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_shoppingItemFragment"
+            app:destination="@id/ShoppingItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddItemFragment"
+        android:name="com.jerry1012.shoppinglist.UI.AddItem.AddItemFragment"
+        android:label="Add Item"
+        tools:layout="@layout/fragment_additem" >
+        <action
+            android:id="@+id/action_AddItemFragment_to_ShoppingItemFragment"
+            app:destination="@id/ShoppingItemFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="shopDetails"
+            app:argType="com.jerry1012.shoppinglist.room.Shop"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="isEdit"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="shoppingItem"
+            app:argType="com.jerry1012.shoppinglist.room.ShoppingItem"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="edtv_shopname">Shop Name</string>
+    <string name="btn_slecet_address">Select the Address</string>
+    <string name="btn_save">Save</string>
+    <string name="fab_addItem">Add Item</string>
+    <string name="fab_addShop">Add Shop</string>
+    <string name="iv_additem">Add Item</string>
+    <string name="iv_deleteitem">Delete Item</string>
+    <string name="iv_edititem">Edit Item</string>
+    <string name="iv_minusitem">Mius Item</string>
+    <string name="edtv_itemname">Item Name</string>
+    <string name="AllItem">All Item</string>
+    <string name="shopsLabel">"Shops</string>
+    <string name="shoppingItemLabel">Shopping Item</string>
+    <string name="addShopLabel">Add Shop</string>
+    <string name="addItemLabel">Add Shopping Item</string>
+    <string name="Item_Unit">Number Of Unit/KiloGram</string>
+    <string name="deafult_Qyuantity">1.0</string>
+
+    <string-array name="grocery_categories">
+        <item name="Default">Select Category</item>
+        <item name="Fruits">Fruits</item>
+        <item name="Vegetables">Vegetables</item>
+        <item name="Beverages">Beverages</item>
+        <item name="Bakery">Bakery</item>
+        <item name="Goods">Goods</item>
+        <item name="Dairy">Dairy</item>
+        <item name="Frozen Food">Frozen Food</item>
+        <item name="Produce">Produce</item>
+        <item name="Cleaners">Cleaners</item>
+        <item name="Paper Goods">Paper Goods</item>
+        <item name="Personal Care">Personal Care</item>
+        <item name="Health Care">Health Care</item>
+        <item name="Household Supplies">Household Supplies</item>
+        <item name="Baby Care">Baby Care</item>
+        <item name="Clothing">Clothing</item>
+        <item name="Other">Other</item>
+    </string-array>
+</resources>

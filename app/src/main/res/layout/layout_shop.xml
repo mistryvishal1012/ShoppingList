@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Shop Name"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_address_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_shopname"
+        tools:text="Address"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_totalQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_address_shop"
+        tools:text="Total Item : 0"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_totalQuantity"
+        tools:text="Time"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:id="@+id/iv_deleteshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_shopname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        android:layout_alignEnd="@id/tv_shopname"
+        android:layout_marginEnd="20sp"
+        android:contentDescription="@string/iv_deleteitem" />
+
+    <ImageView
+        android:id="@+id/iv_editshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_shopname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="135sp"
+        android:layout_marginRight="20sp"
+        android:src="@drawable/ic_edit"
+        android:layout_alignParentRight="true"
+        android:layout_alignEnd="@id/tv_address_shop"
+        android:layout_marginEnd="20sp"
+        android:contentDescription="@string/iv_edititem" />
+
+
+
+</RelativeLayout>

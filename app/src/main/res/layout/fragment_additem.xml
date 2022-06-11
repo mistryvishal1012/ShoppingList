@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UI.AddItem.AddItemFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragmentadditem_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:popupTheme="@style/Theme.AppCompat"/>
+
+    <EditText
+        android:id="@+id/tv_itemname"
+        android:layout_margin="8dp"
+        android:layout_below="@id/fragmentadditem_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edtv_itemname"/>
+
+    <Spinner
+        android:id="@+id/sn_category"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_itemname"/>
+
+    <TextView
+        android:id="@+id/quantity_Unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sn_category"
+        android:text="@string/Item_Unit"/>
+
+    <EditText
+        android:id="@+id/numberpicker_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        android:hint="@string/deafult_Qyuantity"
+        android:layout_below="@id/quantity_Unit"/>
+
+    <Button
+        android:id="@+id/btn_saveitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/btn_save"
+        android:layout_below="@id/numberpicker_quantity"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

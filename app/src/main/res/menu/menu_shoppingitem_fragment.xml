@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/shoppingitem_fragment_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/shoppingitem_fragment_sort"
+        android:title="Sort By"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="collapseActionView|ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/shoppingitem_fragment_name"
+                android:title="Name"/>
+
+            <item
+                android:id="@+id/shoppingitem_fragment_date"
+                android:title="Date Created" />
+
+            <item
+                android:id="@+id/shoppingitem_fragment_categories"
+                android:title="Category" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/shoppingitem_fragment_hideIsBought"
+        android:title="Hide Bought Item"
+        android:checkable="true"
+        android:checked="false"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+
+</menu>
